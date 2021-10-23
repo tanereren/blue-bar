@@ -169,6 +169,12 @@
   background-position: center;
 }
 
+@media (max-width: 400px) {
+  .book{
+    margin-left: -20px;
+  }
+}
+
 /* ABOUT SECTION */
 .about-container{
   background-color: #000;
@@ -233,6 +239,7 @@
     font-size: 0.8em;
   }
 }
+
 /* STYLING THE BUTTONS GLOBALLY */
 button{
   border: 1px solid #fff;

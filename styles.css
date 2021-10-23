@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR STYLING */
+.navbar{
+  padding: 5px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.brand-title{
+  color: #3bebff;
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.navbar-links ul{
+  display: flex;
+  font-size: 1.1em;
+}
+
+.navbar-links li{
+  list-style: none;
+}
+
+.navbar-links li a{
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding-right: 1em;
+}
+
+.navbar-links li:not(:last-child){
+  padding-right: 2em;
+}
+
+.navbar-links li a:hover{
+  color: #3bebff;
+  transition: 0.2s;
+}
+
+/* MAIN SECTION STYLING */
+.main-image{
+  width: 100%;
+  height: 95vh;
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  url("images/cocktails.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.content-container{
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content{
+  color: #fff;
+  letter-spacing: 6.5px;
+  font-size: 4em;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.content h3{
+  font-size: 0.6em;
+}
+
+.content button{
+  font-family: 'Josefin Sans', sans-serif;
+  color: #000;
+  background-color: #fff;
+}
+
+.content button:hover{
+  color: #fff;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+@media (max-width: 750px) {
+  .content-container{
+    font-size: 0.8em;
+  }
+}
+
+/* AWARD INFORMATION STYLING */
+.best-container{
+  padding: 2em;
+  width: 100%;
+  height: 10vh;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.info, .info-2{
+  text-transform: uppercase;
+  padding: 5px;
+  z-index: 1;
+}
+
+/* MEDIA QUERY TO COLUMNISE THE CONTENT FOR MOBILE DEVICES */
+@media (max-width: 720px) {
+  .best-container{
+    flex-direction: column;
+    font-size: 0.8em;
+    line-height: 25px;
+  }
+
+  .info, .info-2{
+    padding: -5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .best-container{
+    font-size: 0.635em;
+  }
+}
+
+/* INFORMATION SECTION */
+.book-container{
+  background-color: #000;
+  color: white;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.book{
+  width: 100%;
+  padding-left: 50px;
+  font-size: 1.25em;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+}
+
+.book h1{
+  text-transform: uppercase;
+}
+
+.book-img{
+  height: 100%;
+  width: 100%;
+  background-image: url("images/cocktails1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* ABOUT SECTION */
+.about-container{
+  background-color: #000;
+  color: white;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.about{
+  width: 50%;
+  font-size: 1.25em;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  padding-right: 100px;
+}
+
+@media (max-width: 750px) {
+  .about{
+    padding-right: 40px;
+  }
+}
+
+.about h1{
+  text-transform: uppercase;
+}
+
+.about-img{
+  height: 100%;
+  width: 50%;
+  background-image: url("images/cocktails2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* END IMAGE SECTION */
+.end-img-container{
+  width: 100%;
+  height: 40vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("images/cocktails3.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.end-content{
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 750px) {
+  .about, .book{
+    font-size: 0.8em;
+  }
+}
+/* STYLING THE BUTTONS GLOBALLY */
+button{
+  border: 1px solid #fff;
+  background: none;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-family: "montserrat";
+  margin: 10px;
+}
+
+button:hover{
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+  transition: 0.5s;
+}
+
+/* MENU STYLING */
+.menu-container{
+  padding-top: 25px;
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+}
+
+.menu-container h1{
+  font-size: 3em;
+}
+
+.menu-container ul {
+  flex-wrap: wrap;
+  display: flex;
+  list-style: none;
+}
+
+.menu-container ul li {
+  flex: 2 0 50%;
+  padding: 30px;
+}
+
+.menu-container h3{
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.menu-container p, h3{
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  .menu-container ul{
+    flex-direction: column;
+  }
+}
+
+/* FOOTER STYLING */
+footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  color: #3bebff;
+  width: 100%;
+  text-align: center;
+  font-size: 1.25em;
+  padding: 30px 25px;
+}
+
+@media (max-width: 750px) {
+  footer{
+    font-size: 0.9em;
+  }
+}
